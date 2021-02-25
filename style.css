@@ -18,3 +18,38 @@ header {
     background-color: khaki;
     margin-bottom: 5%;
 }
+#section2 {
+    width: 100%;
+    background-color: dodgerblue;
+    margin-bottom: 2%;
+}
+#section2::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#section2 > div {
+    background-color: lightblue;
+}
+#dhead {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5%;
+}
+#dleft, #dright {
+    width: 25%;
+}
+#dcenter {
+    width: 40%;
+    margin: 0 5%;
+}
+div:nth-child(n+2) {
+    height: 300px;
+    float: left;
+    margin-bottom: 5%;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: darkviolet;
+}
