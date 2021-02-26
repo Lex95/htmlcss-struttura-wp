@@ -8,11 +8,13 @@ body {
 }
 header {
     width: 100%;
+    /* essendo elementi di tipo blocco non era necessario specificare la width */
     height: 200px;
     background-color: violet;
     margin-bottom: 5%;
 }
 #section1 {
+    /* è buona norma usare #id più "identificativi" tipo "section-top" */
     width: 100%;
     height: 500px;
     background-color: khaki;
@@ -44,6 +46,7 @@ header {
     margin: 0 2%;
 }
 div:nth-child(n+2) {
+    /* "pericoloso" da usare, poichè se dovessi aggiungere altri elementi prima di #dleft il target del selettore cambia drasticamente */
     height: 500px;
     float: left;
     margin-bottom: 2%;
